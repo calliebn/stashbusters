@@ -36,6 +36,13 @@ Yarn.init(
             allowNull: true
         },
 
+
+        weight: {
+            type: DataTypes.INTEGER,
+            allowNull: false
+        },
+
+
         skeins: {
             type: DataTypes.INTEGER,
             allowNull: false
