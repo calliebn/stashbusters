@@ -1,0 +1,31 @@
+[
+    {
+        "username": "goldi",
+        "email": "goldi@gmail.com",
+        "password": "goldstash"
+    },
+
+    {
+        "username": "kpknits",
+        "email": "kp@yahoo.com",
+        "password": "knittersbepicking"
+    },
+
+    {
+        "username": "josscrochet",
+        "email": "jojo@gmail.com",
+        "password": "amigurumi"
+    },
+
+    {
+        "username": "calliebn",
+        "email": "callie.nipper@gmail.com",
+        "password": "crojo"
+    },
+
+    {
+        "username": "hudsondog",
+        "email": "pdoggy@tailwags.com",
+        "password": "soggydoggy"
+    }
+]
