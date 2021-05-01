@@ -1,11 +1,11 @@
 const router = require('express').Router();
-const { Post, User, Comment } = require('../models');
+const { User, Yarn } = require('../models');
 const sequelize = require('../config/connection');
 
 // Homepage
 router.get('/', async (req, res) => {
   try {
-    const postData = await Post.findAll({
+    const yarnData = await Post.findAll({
       attributes: ['id'],
       include: [
         {
