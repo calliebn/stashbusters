@@ -9,7 +9,7 @@ router.get('/', async (req, res) => {
       attributes: ['id'],
       include: [
         {
-          model: Comment,
+          model: Yarn,
           attributes: [
             'company',
             'brand',
@@ -21,20 +21,17 @@ router.get('/', async (req, res) => {
             'dye_lot',
             'user_id',
           ],
-        },
-        {
-          model: User,
-          attributes: ['username'],
+          include: { model: User, attributes: ['id'] },
         },
       ],
     });
 
     // Serialize data so the template can read it
-    const users = userData.map((user) => user.get({ plain: true }));
+    const yarns = yarnData.map((yarn) => yarn.get({ plain: true }));
 
     // Pass serialized data and session flag into template
     res.render('homepage', {
-      users,
+      yarns,
       logged_in: req.session.logged_in,
     });
   } catch (err) {
