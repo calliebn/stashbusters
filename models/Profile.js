@@ -17,7 +17,7 @@ Profile.init(
             references: {
                 model: 'user',
                 key: 'username'
-            }
+            },
         },
 
         enail: {
@@ -25,7 +25,7 @@ Profile.init(
             references: {
                 model: 'user',
                 key: "email"
-            }
+            },
         },
 
         city: {
@@ -46,8 +46,16 @@ Profile.init(
         pets: {
             type: DataTypes.STRING,
             allowNull: true
-        }
+        },
 
+        user_id: {
+            type: DataTypes.INTEGER,
+            references: {
+                model: 'user',
+                key: 'id',
+            },
+
+        },
     },
 
     {
