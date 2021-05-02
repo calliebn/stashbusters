@@ -1,0 +1,38 @@
+[
+    {
+        "username": "goldi",
+        "email": "goldi@gmail.com",
+        "city": "Hillsboro",
+        "craft": "Weaving",
+        "fav_yarn": "Lion Brand Wool Ease Thick & Quick",
+        "pets": "No"
+    },
+
+    {
+        "username": "kpknits",
+        "email": "kp@yahoo.com",
+        "city": "Dubai",
+        "craft": "Knitter",
+        "fav_yarn": "Knit Picks",
+        "pets": "A cat named Purl"
+    },
+
+    {
+        "username": "josscrochet",
+        "email": "jojo@gmail.com",
+        "city": "Portland",
+        "craft": "Crochet",
+        "fav_yarn": "Anything bright!",
+        "pets": "A dog"
+    },
+
+    {
+        "username": "calliebn",
+        "email": "callie.nipper@gmail.com",
+        "city": "Portland",
+        "craft": "All of them",
+        "fav_yarn": "Knitted Wit National Park Series",
+        "pets": "2 dogs named Hudson & Otto"
+    }
+    
+]
