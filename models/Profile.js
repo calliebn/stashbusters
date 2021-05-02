@@ -12,22 +12,6 @@ Profile.init(
             autoIncrement: true,
         },
 
-        username: {
-            type: Datatypes.STRING,
-            references: {
-                model: 'user',
-                key: 'username'
-            },
-        },
-
-        enail: {
-            type: Datatypes.STRING,
-            references: {
-                model: 'user',
-                key: "email"
-            },
-        },
-
         city: {
             type: Datatypes.STRING,
             allowNull: true,

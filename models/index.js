@@ -13,7 +13,7 @@ User.hasMany(Yarn, {
 });
 
 User.hasOne(Profile, {
-    foreignKey: '',
+    foreignKey: 'user_id',
     onDelete: 'CASCADE'
 });
 
