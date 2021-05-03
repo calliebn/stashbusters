@@ -16,7 +16,8 @@ async function signupFormHandler(event) {
     if (response.ok) {
       console.log('success');
 
-      document.location.replace('/');
+      //WHICH PLACE TO REPLACE? LOGIN OR HOMEPAGE?
+      document.location.replace('/login');
     } else {
       alert(response.statusText);
     }
