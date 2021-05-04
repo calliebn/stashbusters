@@ -1,5 +1,5 @@
 const router = require('express').Router();
-const { Yarn, User } = require('../../models');
+const { Yarn } = require('../../models');
 
 const withAuth = require('../../utils/auth');
 
@@ -7,7 +7,14 @@ const withAuth = require('../../utils/auth');
 router.post('/', withAuth, async (req, res) => {
   try {
     const newYarn = await Yarn.create({
-      ...req.body,
+      company: req.params.company,
+      brand: req.params.brand,
+      colorway: req.params.colorway,
+      yardage: req.params.yardage,
+      grams: req.params.grams,
+      weight: req.params.weight,
+      skeins: req.params.skeins,
+      dye_lot: req.params.dye_lot,
       user_id: req.session.user_id,
     });
 
@@ -20,19 +27,19 @@ router.post('/', withAuth, async (req, res) => {
 // deletes the yarn cards
 router.delete('/:id', withAuth, async (req, res) => {
   try {
-    const newYarn = await Yarn.destroy({
+    const yarnData = await Yarn.destroy({
       where: {
         id: req.params.id,
         user_id: req.session.user_id,
       },
     });
 
-    if (!newYarn) {
+    if (!yarnData) {
       res.status(404).json({ message: 'No yarn found with this id!' });
       return;
     }
 
-    res.status(200).json(newYarn);
+    res.status(200).json(yarnData);
   } catch (err) {
     res.status(500).json(err);
   }
@@ -86,7 +93,7 @@ router.get('/:id', (req, res) => {
 // Updates an existing yarn card
 router.put('/:id', withAuth, (req, res) => {
   Yarn.update({
-    comapny: req.params.company,
+    company: req.params.company,
     brand: req.params.brand,
     colorway: req.params.colorway,
     yardage: req.params.yardage,
@@ -100,6 +107,17 @@ router.put('/:id', withAuth, (req, res) => {
         id: req.params.id
       }
     })
-})
+    .then(dbYarnData => {
+      if (!dbYarnData) {
+        res.status(404).json({ message: 'A yarn with this id does not exist' });
+        return
+      }
+      res.json(dbYarnData);
+    })
+    .catch(err => {
+      console.log(err);
+      res.status(500).json(err);
+    })
+});
 
 module.exports = router;
