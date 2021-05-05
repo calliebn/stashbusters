@@ -75,20 +75,20 @@ router.get('/:id', (req, res) => {
     },
     attributes: ['company', 'brand', 'colorway', 'yardage', 'grams', 'weight', 'skeins', 'dye_lot']
   })
-})
 
-  .then(dbYarnData => {
-    if (!dbYarnData) {
-      res.status(404).json({ message: 'This yarn cannot be found' });
-      return;
-    }
-    res.json(dbYarnData);
-  })
+    .then(dbYarnData => {
+      if (!dbYarnData) {
+        res.status(404).json({ message: 'This yarn cannot be found' });
+        return;
+      }
+      res.json(dbYarnData);
+    })
 
-  .catch(err => {
-    console.log(err);
-    res.status(500).json(err);
-  });
+    .catch(err => {
+      console.log(err);
+      res.status(500).json(err);
+    })
+});
 
 // Updates an existing yarn card
 router.put('/:id', withAuth, (req, res) => {
