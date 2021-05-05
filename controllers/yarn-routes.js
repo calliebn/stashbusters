@@ -17,7 +17,7 @@ router.get('/', async (req, res) => {
             ]
         })
 
-        const yarns = allYarn.map((yarns) => yarns.get({ plain: true }))
+        const yarns = allYarn.map((yarn) => yarn.get({ plain: true }))
 
         req.render('stash', {
             yarns,
