@@ -6,24 +6,24 @@ class Profile extends Model { }
 Profile.init(
     {
         id: {
-            type: Datatypes.INTEGER,
+            type: DataTypes.INTEGER,
             allowNull: false,
             primaryKey: true,
             autoIncrement: true,
         },
 
         city: {
-            type: Datatypes.STRING,
+            type: DataTypes.STRING,
             allowNull: true,
         },
 
         craft: {
-            type: Datatypes.STRING,
+            type: DataTypes.STRING,
             allowNull: false,
         },
 
         fav_yarn: {
-            type: Datatypes.STRING,
+            type: DataTypes.STRING,
             allowNull: true,
         },
 
