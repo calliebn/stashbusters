@@ -148,7 +148,7 @@ header h1 a {
 
 main {
   flex: 1;
-  padding: 2% 4%;
+  padding: 2% 2% 0%;
 }
 
 .edit-link {
@@ -226,4 +226,10 @@ h3 {
 
 .signUp {
   justify-content: right;
+}
+
+.stash {
+  justify-content: right;
+  margin-left: 550px;
+  margin-right: 0px;
 }
