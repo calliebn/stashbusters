@@ -19,7 +19,7 @@ router.get('/', async (req, res) => {
 
         const yarns = allYarn.map((yarn) => yarn.get({ plain: true }))
 
-        req.render('stash', {
+        req.render('yarn', {
             yarns,
             logged_in: req.session.logged_in
         });
