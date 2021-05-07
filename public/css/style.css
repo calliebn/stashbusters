@@ -1,3 +1,10 @@
+:root {
+  --beige: #fbe0c4;
+  --sky: #8ab6d6;
+  --medblue: #2978b5;
+  --night: #0061a8;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -13,7 +20,7 @@ html {
 
 a {
   text-decoration: none;
-  color: #073457;
+  color: #0061a8;
   font-weight: bold;
   transition: color 0.1s;
 }
@@ -97,12 +104,12 @@ label {
 }
 
 .wrapper {
-  width: 100%;
+  width: auto;
   min-height: 100%;
-  max-width: 1200px;
+  max-width: auto;
   margin: 0 auto;
-  display: flex;
-  flex-direction: column;
+  /* display: flex;
+  flex-direction: column; */
   background-color: #8ab6d6;
 }
 
@@ -110,6 +117,7 @@ header {
   font-size: 26px;
   border-bottom: 1px solid #ccc;
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
   align-items: center;
   padding: 0 1%;
@@ -123,8 +131,12 @@ header h1 {
 }
 
 header nav a {
-  color: lightgoldenrodyellow;
+  color: #8ab6d6;
   padding: 20px;
+}
+
+header nav a:hover {
+  color: #2978b5;
 }
 
 header nav #logout {
@@ -138,12 +150,18 @@ header nav #logout {
 }
 
 header h1 a {
-  background-color: lightgoldenrodyellow;
-  border: solid;
+  background-color: #2978b5;
+  color: #fbe0c4;
+  /* padding: 10px, 5px; */
+  /* border: solid; */
   border-radius: 5px;
-  padding: 5px;
+  padding: 5px 10px;
   margin: 10px;
-  box-shadow: 5px 10px #e4dada;
+  box-shadow: 5px 10px 5px hsl(31, 65%, 72%);
+}
+
+header h1 a:hover {
+  color: #8ab6d6;
 }
 
 main {
@@ -199,10 +217,11 @@ section {
 }
 
 .login {
-  border: 2px solid #ccc;
+  border: 2px solid var(--night);
   border-radius: 5px;
   margin: 50px;
   color: #2978b5;
+  background-color: var(--beige);
   padding: 60px;
   position: absolute;
   justify-content: center;
@@ -214,22 +233,20 @@ h3 {
 }
 
 .signup {
-  border: 2px solid #ccc;
+  border: 2px solid var(--night);
   border-radius: 5px;
   margin: 50px;
   color: #2978b5;
+  background-color: var(--beige);
   padding: 60px;
-  justify-content: right;
   position: absolute;
+  justify-content: center;
   border-style: groove;
 }
 
-.signUp {
-  justify-content: right;
-}
-
 .stash {
-  justify-content: right;
-  margin-left: 550px;
-  margin-right: 0px;
+  justify-content: left;
+  padding: 10px, 5px;
+  /* margin-left: 550px;
+  margin-right: 0px; */
 }
