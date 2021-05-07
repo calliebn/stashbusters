@@ -1,11 +1,15 @@
 const router = require('express').Router();
 const { Yarn } = require('../models');
+const withAuth = require('../utils/auth');
 
 router.get('/', async (req, res) => {
     try {
         const allYarn = await Yarn.findAll({
+            where: {
+                user_id: req.session.user_id
+            },
+
             attributes: [
-                'id',
                 'company',
                 'brand',
                 'colorway',
@@ -16,12 +20,13 @@ router.get('/', async (req, res) => {
                 'dye_lot'
             ]
         })
+        console.log(allYarn)
+        const yarns = allYarn.map((yarns) => yarns.get({ plain: true }))
+        console.log(yarns)
 
-        const yarns = allYarn.map((yarn) => yarn.get({ plain: true }))
-
-        req.render('stash', {
+        res.render('yarn', {
             yarns,
-            logged_in: req.session.logged_in
+            // logged_in: req.session.logged_in
         });
 
     } catch (err) {
