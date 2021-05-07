@@ -2,12 +2,11 @@ const router = require('express').Router();
 const { Yarn } = require('../models');
 const withAuth = require('../utils/auth');
 
-router.get('/:user_id', async (req, res) => {
-    console.log(req.params.user_id)
+router.get('/', async (req, res) => {
     try {
         const allYarn = await Yarn.findAll({
             where: {
-                user_id: req.params.user_id
+                user_id: req.session.user_id
             },
 
             attributes: [

@@ -47,6 +47,9 @@ router.delete('/:id', async (req, res) => {
 // Gets the yarn cards
 router.get('/', (req, res) => {
   Yarn.findAll({
+    where: {
+      user_id: req.session.user_id
+    },
     attributes: [
       'company',
       'brand',
@@ -70,7 +73,7 @@ router.get('/', (req, res) => {
 router.get('/:id', (req, res) => {
   Yarn.findOne({
     where: {
-      id: req.params.id
+      id: req.params.id,
     },
     attributes: ['company', 'brand', 'colorway', 'yardage', 'grams', 'weight', 'skeins', 'dye_lot']
   })
