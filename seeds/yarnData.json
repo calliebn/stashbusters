@@ -1,0 +1,193 @@
+[
+    {
+        "company": "Bernat",
+        "brand": "Softee Chunky",
+        "colorway": "True Grey",
+        "yardage": 108,
+        "grams": 100,
+        "weight": 6,
+        "skeins": 1,
+        "dye_lot": 145601,
+        "user_id": 1
+    },
+
+    {
+        "company": "Brown Sheep Company",
+        "brand": "Nature Spun",
+        "colorway": "Burnt Sienna",
+        "yardage": 310,
+        "grams": 50,
+        "weight": 1,
+        "skeins": 1,
+        "dye_lot": 31,
+        "user_id": 2
+    },
+
+    {
+        "company": "Brown Sheep Company",
+        "brand": "Nature Spun",
+        "colorway": "Sunburst Gold",
+        "yardage": 310,
+        "grams": 50,
+        "weight": 1,
+        "skeins": 1,
+        "dye_lot":  54,
+        "user_id": 2
+    },
+
+    {
+        "company": "Lion Brand",
+        "brand": "Tweed Stripes",
+        "colorway": "Orchid",
+        "yardage": 144,
+        "grams": 85,
+        "weight": 5,
+        "skeins": 2,
+        "dye_lot": 67902,
+        "user_id": 3
+    },
+
+    {
+        "company": "Lion Brand",
+        "brand": "Hometown USA",
+        "colorway": "Montpelier Peacock",
+        "yardage": 81,
+        "grams": 142,
+        "weight": 6,
+        "skeins": 4,
+        "dye_lot": 23794,
+        "user_id": 4
+    },
+
+    {
+        "company": "Lion Brand",
+        "brand": "ZZ Twist",
+        "colorway": "Cranberry",
+        "yardage": 246,
+        "grams": 100,
+        "weight": 4,
+        "skeins": 8,
+        "dye_lot": 619487,
+        "user_id": 3
+    },
+
+    {
+        "company": "Red Heart",
+        "brand": "Washable Ewe",
+        "colorway": "Icing",
+        "yardage": 183,
+        "grams": 100,
+        "weight": 4,
+        "skeins": 2,
+        "dye_lot": 772316,
+        "user_id": 3
+    },
+
+    {
+        "company": "Red Heart",
+        "brand": "Bamboo Ewe",
+        "colorway": "Sprout",
+        "yardage": 177,
+        "grams": 100,
+        "weight": 4,
+        "skeins": 2,
+        "dye_lot": 3658,
+        "user_id": 3
+    },
+
+    {
+        "company": "The Alpaca Yarn Co",
+        "brand": "Classic Alpaca",
+        "colorway": "1628",
+        "yardage": 110,
+        "grams": 50,
+        "weight": 3,
+        "skeins": 1,
+        "dye_lot": 71838,
+        "user_id": 4
+    },
+
+    {
+        "company": "Lion Brand",
+        "brand": "Superwash Merino Cashmere",
+        "colorway": "Saffron",
+        "yardage": 87,
+        "grams": 40,
+        "weight": 4,
+        "skeins": 3,
+        "dye_lot": 57116,
+        "user_id": 4
+    },
+
+    {
+        "company": "Lion Brand",
+        "brand": "Superwash Merino Cashmere",
+        "colorway": "Olive",
+        "yardage": 87,
+        "grams": 40,
+        "weight": 4,
+        "skeins": 3,
+        "dye_lot": 57113,
+        "user_id": 4
+    },
+
+    {
+        "company": "Patons",
+        "brand": "Classic Wool",
+        "colorway": "Wedgewood",
+        "yardage": 210,
+        "grams": 100,
+        "weight": 4,
+        "skeins": 3,
+        "dye_lot": 119109,
+        "user_id": 2
+    },
+
+    {
+        "company": "Loops & Threads",
+        "brand": "Impeccable",
+        "colorway": "True Grey",
+        "yardage": 268,
+        "grams": 128,
+        "weight": 4,
+        "skeins": 3,
+        "dye_lot": 293750,
+        "user_id": 1
+    },
+
+    {
+        "company": "Zealana",
+        "brand": "Kauri",
+        "colorway": "K 05",
+        "yardage": 94,
+        "grams": 50,
+        "weight": 4,
+        "skeins": 2,
+        "dye_lot": 32,
+        "user_id": 4
+    },
+
+    {
+        "company": "Zealana",
+        "brand": "Kauri",
+        "colorway": "K 13",
+        "yardage": 94,
+        "grams": 50,
+        "weight": 4,
+        "skeins": 2,
+        "dye_lot": 100,
+        "user_id": 4
+    },
+
+    {
+        "company": "Furls",
+        "brand": "Whims Merino",
+        "colorway": "Light Grey",
+        "yardage": 196,
+        "grams": 100,
+        "weight": 3,
+        "skeins": 3,
+        "dye_lot": 3326,
+        "user_id": 4
+    }
+]
