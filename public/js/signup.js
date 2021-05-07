@@ -1,10 +1,10 @@
 async function signupFormHandler(event) {
   event.preventDefault();
 
-  const username = document.querySelector('#username-signup').value.trim();
+  const email = document.querySelector('#email-signup').value.trim();
   const password = document.querySelector('#password-signup').value.trim();
 
-  if (username && password) {
+  if (email && password) {
     const response = await fetch('/api/users', {
       method: 'POST',
       body: JSON.stringify({
@@ -16,7 +16,7 @@ async function signupFormHandler(event) {
     if (response.ok) {
       console.log('success');
 
-      //WHICH PLACE TO REPLACE? LOGIN OR HOMEPAGE?
+      //WHICH PLACE TO REPLACE? LgitOGIN OR HOMEPAGE?
       document.location.replace('/homepage');
     } else {
       alert(response.statusText);
