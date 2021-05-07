@@ -2,12 +2,14 @@ const router = require('express').Router();
 const { User, Profile } = require('../models');
 const withAuth = require('../utils/auth');
 
-// Gets profile of user
-router.get('/', withAuth, async (req, res) => {
+// Gets profile of user withAuth,
+router.get('/:id', async (req, res) => {
+
+    console.log(req.params.id)
     try {
         const newProfile = await Profile.findOne({
             where: {
-                user_id: req.session.user_id
+                id: req.params.id
             },
             attributes: [
                 'id',
@@ -21,13 +23,13 @@ router.get('/', withAuth, async (req, res) => {
                 model: User,
                 attributes: ['username', 'email']
             }]
-        })
-        const profiles = profileData.map((profile) => profile.get({ plain: true }));
-
-        req.render('profile', {
-            profiles,
-            logged_in: req.session.logged_in
         });
+        const profile = newProfile.get({ plain: true })
+        res.render('profile', {
+            profile
+            // logged_in: req.session.logged_in
+        });
+
     } catch (err) {
         res.status(500).json(err);
     }
