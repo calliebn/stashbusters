@@ -7,8 +7,9 @@ html {
   height: 100%;
   padding: 0;
   margin: 0;
-  font-family: "Raleway", sans-serif;
+  font-family: 'Raleway', sans-serif;
   color: #fbe0c4;
+  flex-wrap: wrap;
 }
 
 a {
@@ -107,7 +108,7 @@ label {
 }
 
 header {
-  font-size: 26px;
+  font-size: 20px;
   border-bottom: 1px solid #ccc;
   display: flex;
   justify-content: space-between;
@@ -118,8 +119,9 @@ header {
   background-color: #fbe0c4;
 }
 
-header h1 {
+header {
   font-size: 26px;
+  color: black;
 }
 
 header nav a {
@@ -144,11 +146,15 @@ header h1 a {
   padding: 5px;
   margin: 10px;
   box-shadow: 5px 10px #e4dada;
+  flex-wrap: wrap;
 }
 
 main {
-  flex: 1;
-  padding: 2% 2% 0%;
+  padding: 1%;
+  position: absolute;
+  bottom: 1px;
+  width: 100%;
+  top: 20%;
 }
 
 .edit-link {
@@ -209,6 +215,8 @@ section {
   border-style: groove;
 }
 
+h1,
+h2,
 h3 {
   color: #2978b5;
 }
@@ -228,8 +236,10 @@ h3 {
   justify-content: right;
 }
 
+/* used flex to make sure that all data is on the page */
 .stash {
   justify-content: right;
-  margin-left: 550px;
+  margin-left: 50px;
   margin-right: 0px;
+  flex-wrap: wrap;
 }
