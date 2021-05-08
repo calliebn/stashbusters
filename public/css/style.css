@@ -9,6 +9,16 @@
   box-sizing: border-box;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  color: #fff;
+}
+
 body,
 html {
   height: 100%;
@@ -164,10 +174,10 @@ header h1 a:hover {
   color: #8ab6d6;
 }
 
-main {
+/* main {
   flex: 1;
   padding: 2% 2% 0%;
-}
+} */
 
 .edit-link {
   padding: 10px;
@@ -216,22 +226,7 @@ section {
   padding: 40px;
 }
 
-.login {
-  border: 2px solid var(--night);
-  border-radius: 5px;
-  margin: 50px;
-  color: #2978b5;
-  background-color: var(--beige);
-  padding: 60px;
-  position: absolute;
-  justify-content: center;
-  border-style: groove;
-}
-
-h3 {
-  color: #2978b5;
-}
-
+.login,
 .signup {
   border: 2px solid var(--night);
   border-radius: 5px;
@@ -244,9 +239,62 @@ h3 {
   border-style: groove;
 }
 
+.login h3,
+.signup h3 {
+  color: #2978b5;
+}
+
+/* .signup {
+  border: 2px solid var(--night);
+  border-radius: 5px;
+  margin: 50px;
+  color: #2978b5;
+  background-color: var(--beige);
+  padding: 60px;
+  position: absolute;
+  justify-content: center;
+  border-style: groove;
+} */
+
 .stash {
   justify-content: left;
   padding: 10px, 5px;
   /* margin-left: 550px;
   margin-right: 0px; */
+}
+
+img {
+  float: right;
+  width: 50%;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.seccard {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.card-body {
+  background-color: var(--beige);
+  display: flex;
+  flex-direction: column;
+  max-width: 40%;
+}
+
+.card-body p {
+  color: var(--night);
+  border-bottom: 1px dotted var(--sky);
+  font-weight: 700;
+}
+
+.card-body img {
+  max-width: 20%;
+  padding-bottom: 10px;
 }

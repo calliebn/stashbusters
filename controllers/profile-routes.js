@@ -25,6 +25,7 @@ router.get('/:id', async (req, res) => {
             }]
         });
         const profile = newProfile.get({ plain: true })
+
         res.render('profile', {
             profile
             // logged_in: req.session.logged_in
