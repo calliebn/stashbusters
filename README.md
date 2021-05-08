@@ -31,10 +31,11 @@ https://nameless-mesa-29731.herokuapp.com/
 
 ## Authors
 
-Callie Nipper
 
-Goldiluck Rebollido
+Callie Nipper -- https://github.com/calliebn
 
-KP 
+Goldiluck Rebollido -- https://github.com/goldreb
 
-Josseline Rendon
+KP  -- https://github.com/10-kp
+
+Josseline Rendon --https://github.com/JGrandbit
