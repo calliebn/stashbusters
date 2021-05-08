@@ -1,63 +1,68 @@
 <section class="container">
-  {{#each yarns as |yarn|}}
+  <div class="row align-items-start">
+    <div class="col">
+      {{#each yarns as |yarn|}}
 
-  {{> yarn-details}}
+      {{> yarn-details}}
 
-  {{/each}}
-</section>
-
-<div class="container">
-  <form class="add-yarn-form">
-    <div class="newyarn">
-      <h3>Add a new yarn</h3>
-      <div>
-        <label for="company">Company</label>
-        <input type="text" id="company" />
-      </div>
-
-      <div>
-        <label for="brand">Brand</label>
-        <input type="text" id="brand">
-      </div>
-
-      <div>
-        <label for="colorway">Colorway</label>
-        <input type="text" id="colorway">
-      </div>
-
-      <div>
-        <label for="yardage">Yardage</label>
-        <input type="text" id="yardage">
-      </div>
-
-      <div>
-        <label for="grams">Grams</label>
-        <input type="text" id="gram">
-      </div>
-
-      <div>
-        <label for="weight">Weight</label>
-        <input type="text" id="Weight">
-      </div>
-
-      <div>
-        <label for="skeins">Skeins</label>
-        <input type="text" id="skeins">
-      </div>
-
-      <div>
-        <label for="dye_lot">Dye Lot</label>
-        <input type="text" id="dye_lot">
-      </div>
-
-      <div>
-        <label for="user_id">User ID</label>
-        <input type="text" id="user_id">
-      </div>
-      <button type="Submit">Add Yarn</button>
+      {{/each}}
     </div>
-  </form>
+  </div>
 
-</div>
+
+  <div class="col">
+    <form class="add-yarn-form">
+      <div class="newyarn">
+        <h3>Add a new yarn</h3>
+        <div>
+          <label for="company">Company</label>
+          <input type="text" id="company" />
+        </div>
+
+        <div>
+          <label for="brand">Brand</label>
+          <input type="text" id="brand">
+        </div>
+
+        <div>
+          <label for="colorway">Colorway</label>
+          <input type="text" id="colorway">
+        </div>
+
+        <div>
+          <label for="yardage">Yardage</label>
+          <input type="text" id="yardage">
+        </div>
+
+        <div>
+          <label for="grams">Grams</label>
+          <input type="text" id="grams">
+        </div>
+
+        <div>
+          <label for="weight">Weight</label>
+          <input type="text" id="weight">
+        </div>
+
+        <div>
+          <label for="skeins">Skeins</label>
+          <input type="text" id="skeins">
+        </div>
+
+        <div>
+          <label for="dye_lot">Dye Lot</label>
+          <input type="text" id="dye_lot">
+        </div>
+
+        {{!-- <div>
+          <label for="user_id">User ID</label>
+          <input type="text" id="user_id">
+        </div> --}}
+        <button type="Submit">Add Yarn</button>
+      </div>
+    </form>
+
+  </div>
+</section>
 
 <script src="js/add-yarn.js"></script>

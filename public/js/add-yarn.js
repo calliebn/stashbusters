@@ -1,4 +1,4 @@
-async function addyarnform(event) {
+async function newFormHandler(event) {
   event.preventDefault();
 
   // Get the title, url and context/description for the post
@@ -6,12 +6,11 @@ async function addyarnform(event) {
   const brand = document.querySelector('#brand').value;
   const colorway = document.querySelector('#colorway').value;
   const yardage = document.querySelector('#yardage').value;
-  const dyeLot = document.querySelector('#dye_lot').value;
   const grams = document.querySelector('#grams').value;
   const weight = document.querySelector('#weight').value;
-  const skiens = document.querySelector('#skiens').value;
+  const skeins = document.querySelector('#skeins').value;
   const dyeLot = document.querySelector('#dye_lot').value;
-  const userId = req.session.user_id.value;
+  // const userId = session.user_id.value;
 
   const response = await fetch(`/api/yarn`, {
     method: "POST",
@@ -22,9 +21,9 @@ async function addyarnform(event) {
       yardage,
       grams,
       weight,
-      skiens,
+      skeins,
       dyeLot,
-      userId,
+      // userId,
     }),
     headers: {
       "Content-Type": "application/json",
@@ -32,7 +31,7 @@ async function addyarnform(event) {
   });
 
   if (response.ok) {
-    document.location.replace("/");
+    document.location.replace("/yarn");
   } else {
     alert(response.statusText);
   }
