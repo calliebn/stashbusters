@@ -16,12 +16,12 @@ A Pokédex of yarn. Stashbusters was design to help keep your yarn organized!
 
 ## Built With
 Yarn install is required to install dependencies
--Bcrypt
--Dotenv
--Express
--Express-handlebars
--Mysql2
--Sequelize
+* Bcrypt
+* Dotenv
+* Express
+* Express-handlebars
+* Mysql2
+* Sequelize
 
 ## Link to Project
 https://github.com/calliebn/stashbusters.git
@@ -30,7 +30,11 @@ https://github.com/calliebn/stashbusters.git
 https://nameless-mesa-29731.herokuapp.com/
 
 ## Authors
+
 Callie Nipper
+
 Goldiluck Rebollido
+
 KP 
+
 Josseline Rendon
